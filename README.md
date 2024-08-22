@@ -62,7 +62,7 @@ The Credit Card Issuance Management Application is a Spring Boot-based applicati
         - `cd creditcardapp`
         - `./mvnw spring-boot:run` (or `mvnw spring-boot:run` for MicrosoftWin)
 
-4. **Application uses Swagger/OpenApi and will start running on `http://localhost:8080/swagger-ui/index.html`
+4. **Application uses Swagger/OpenApi and will start running on** `http://localhost:8080/swagger-ui/index.html`
    
 ### **API Endpoints**
 
@@ -70,7 +70,7 @@ Here are the key RESTful API endpoints:
 
 - **Add a new individual:**
   - **Method**: `POST`
-  - **Endpoint**: `/api/use/{userOib}`
+  - **Endpoint**: `/api/user/{userOib}`
   - **Request Body**:
     ```json
     {
