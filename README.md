@@ -69,23 +69,27 @@ The Credit Card Issuance Management Application is a Spring Boot-based applicati
 Here are the key RESTful API endpoints:
 
 - **Add a new individual:**
-  - `POST /api/user`
+  - **Method**: `POST`
+  - **Endpoint**: `/api/use/{userOib}`
   - **Request Body**:
     ```json
-  {
-  "firstName": "Ivan",
-  "lastName": "Horvat",
-  "oib": "05552352140",
-  "status": "1"
-   }
+    {
+      "firstName": "Ivan",
+      "lastName": "Horvat",
+      "oib": "05552352140",
+      "status": "1"
+    }
     ```
 
 - **Search for an individual by OIB:**
-  - `GET /api/user/{userOib}`
+  - **Method**: `GET`
+  - **Endpoint**: `/api/user/{userOib}`
 
 - **Generate a text file for an individual:**
-  - `GET /api/generate/{userOib}`
+  - **Method**: `GET`
+  - **Endpoint**: `/api/generate/{userOib}`
 
 - **Delete an individual:**
-  - `DELETE /api/user/{userOib}`
+  - **Method**: `DELETE`
+  - **Endpoint**: `/api/user/{userOib}`
 
