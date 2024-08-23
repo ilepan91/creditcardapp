@@ -33,36 +33,18 @@ The Credit Card Issuance Management Application is a Spring Boot-based applicati
 - Git (for cloning the repository)
 - MySQL Database
 
-### **Setup Instructions**
+### **Getting Started**
 
-## Getting Started
+1. **Access the Application:**
 
-1. **Install MySQL:**
+   The application is deployed on AWS Elastic Beanstalk and can be accessed at the following URL:
 
-   Download and install MySQL and MySQL Workbench if you don't have it installed already. You can download the MySQL Community Server from the official website: [MySQL Downloads](https://dev.mysql.com/downloads/mysql/)
+   [Credit Card App](http://creditcardtestapp-env.eba-3pibv92s.us-east-1.elasticbeanstalk.com/swagger-ui/index.html)
 
-2. **Create a MySQL Database:**
+2. **Explore the API:**
 
-   Open MySQL Workbench, and open `create_user.sql` script.
-   After executing it, create a new connection: `creditcardapp`, where password should be set as `user1234`.
+   The application uses Swagger/OpenAPI. You can explore and interact with the API using the Swagger UI available at the URL above.
 
-   If you're using different connecetion and credentials then:
-   - Reconfigure the application's database connection properties in the `src/main/resources/application.properties` file.
-   - Update the following properties with your MySQL credentials: <br/>
-   `spring.datasource.url=jdbc:mysql://localhost:3306/user_directory` <br/>
-   `spring.datasource.username=creditcarduser` <br/>
-   `spring.datasource.password=your-mysql-password`
-
-3. **Execute sql script(s) and run the application**
-
-   - Download project to your file system or clone the repository: `git clone https://github.com/ilepan91/creditcardapp.git`
-   - Login in created MySQL connection with correct credentials and go to `File -> Open SQL script`. Choose `credit_card_db.sql` and Execute it.
-   - Open _creditcardapp_ project in your IDE and run the _CreditCardApplication.java_
-     You can also run it from the command line:
-        - `cd creditcardapp`
-        - `./mvnw spring-boot:run` (or `mvnw spring-boot:run` for MicrosoftWin)
-
-4. **Application uses Swagger/OpenApi and will start running on**  [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
    
 ### **API Endpoints**
 
